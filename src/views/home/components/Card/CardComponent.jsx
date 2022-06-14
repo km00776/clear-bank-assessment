@@ -4,7 +4,7 @@ const Card = (props) => {
   const { data } = props;
 
   return (
-    <div onClick={window.open(data.wikipedia_url)} className={styles.card}>
+    <div className={styles.card}>
       <img
         src={
           typeof data.image?.url === "undefined"
