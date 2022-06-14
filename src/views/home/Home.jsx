@@ -12,7 +12,7 @@ export class Home extends React.Component {
     };
   }
 
-  async componentDidMount() {
+  componentDidMount() {
     getCats(CAT_URI).then((data) => {
       this.setState({ cats: data }, () => {
         getCats(CAT_URI);
